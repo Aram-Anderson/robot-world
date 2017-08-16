@@ -1,0 +1,15 @@
+<form action="/robots/<%= @robot['id'] %>" method="post">
+  <fieldset>
+    <legend>Update This Robot</legend>
+    <input type="hidden" name="_method" value="PUT" />
+      Name:<br>
+      <input type='text' name='robot[name]' value=<%= @robot["name"] %>><br/>
+      City:<br>
+      <input type='text' name='robot[city]' value=<%= @robot["city"] %>><br/>
+      State:<br>
+      <input type='text' name='robot[state]' value=<%= @robot["state"] %>><br/>
+      Department<br>
+      <input type='text' name='robot[department]' value=<%= @robot["department"] %>><br/><br/>
+      <input type="submit" value="Submit">
+    </fieldset>
+</form>
